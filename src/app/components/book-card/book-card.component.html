@@ -1,0 +1,29 @@
+@if(book){
+<mat-card class="card">
+    <div>
+        <mat-card-header class="card-header">
+            <mat-card-title>{{book.title}}</mat-card-title>
+            <button class="button-del" mat-button (click)="deleteFromBooksList(book)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </mat-card-header>
+    </div>
+
+    <div class="card-image">
+        <img mat-card-image src="{{book.photo}}" alt="">
+    </div>
+
+    <mat-card-content class="card-content">
+        <p>{{book.description}}</p>
+    </mat-card-content>
+
+    <mat-card-content class="font-weight-bold">
+        <p>R$ {{book.price}}</p>
+    </mat-card-content>
+
+    <mat-card-actions class="card-buttons">
+        <button class="button-buy" mat-button (click)="addToShoppingCart()">COMPRAR</button>
+    </mat-card-actions>
+
+</mat-card>
+}

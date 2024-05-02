@@ -1,0 +1,12 @@
+<mat-grid-list class="grid-style" cols="5" rowHeight="500px">
+    @for(book of booksList; track book.id){
+    <mat-grid-tile>
+        <app-book-card 
+            [book]="book" (addBookToCart)="warnAboutAddBookToCart(book)">
+        </app-book-card>
+    </mat-grid-tile>
+    }
+    @empty {
+    <p>Sem itens no catálogo</p>
+    }
+</mat-grid-list>

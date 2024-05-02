@@ -1,0 +1,11 @@
+mat-drawer {
+    background-color: #E6B86E;
+    width: 300px;
+    overflow-y: hidden;
+}
+
+.button-cart{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.card {
+    display: grid;
+    grid-template-rows: 50px 250px 25px 25px 50px;
+    background-color: #E6B86E;
+    position: relative;
+    width: 250px;
+    height: 400px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+}
+
+.card-image{
+    overflow-y: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+
+.card-buttons {
+    justify-content: center;
+}
+
+.button-del{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    padding: 0;
+    height: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+mat-icon{
+    font-size: 20px;
+}
+
+.button-buy{
+    background-color: #F0E084;
+    border: solid 1px #E6996E;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}

@@ -1,0 +1,20 @@
+<mat-list>
+    @for(book of addedBooksList; track book.id){
+    <div class="flex">
+        <mat-list-item>
+            <p>{{book.title}} | {{book.totalAddedToCart}} </p>
+        </mat-list-item>
+        <div class="button-container">
+            <button class="button" (click)="decrementTotalBookCopies(book)">
+                <mat-icon>remove</mat-icon>
+            </button>
+            <button class="button" (click)="incrementTotalBookCopies(book)">
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    }@empty {
+    <p>Carrinho Vazio</p>
+    }
+</mat-list>

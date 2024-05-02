@@ -1,0 +1,16 @@
+<app-header>
+    <button type="button" class="button-cart" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>shopping_cart</mat-icon>
+    </button>
+</app-header>
+
+<mat-drawer-container class="example-container" autosize >
+    <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+        <app-books-cart [booksList]="addedBooksList"></app-books-cart>
+    </mat-drawer>
+
+    <app-books-catalog (addBookToCart)="addBookToCart($event)"></app-books-catalog>
+
+    <app-book-create />
+
+</mat-drawer-container>

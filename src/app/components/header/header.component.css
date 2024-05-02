@@ -1,0 +1,5 @@
+.header-space{
+    display: flex;
+    justify-content: space-between;
+    background-color: #C69966;
+}

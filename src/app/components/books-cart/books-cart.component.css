@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+}
+
+.button {
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
